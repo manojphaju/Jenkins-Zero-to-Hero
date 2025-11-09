@@ -67,3 +67,14 @@ cd sonarqube-10.4.1.88267/bin/linux-x86-64
 Hurray !! Now you can access the `SonarQube Server` on `http://<ip-address>:9000` 
 
 
+## Next Steps
+### Configure ArgoCD using operator
+### Before installing OLM, make sure cert-manager CRDs are installed
+
+```
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.2/cert-manager.crds.yaml
+install rest from operatorhub.io > argocd > install
+
+
+```
+
